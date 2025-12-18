@@ -95,6 +95,8 @@ class Edgecos extends OS implements MempoolsDiscovery, ProcessorDiscovery
             $oid = '.1.3.6.1.4.1.259.10.1.39.1.39.2.1.0';
         } elseif (Str::startsWith($device->sysObjectID, '.1.3.6.1.4.1.259.10.1.45.')) { //ECS4120
             $oid = '.1.3.6.1.4.1.259.10.1.45.1.39.2.1.0';
+        } elseif (Str::startsWith($device->sysObjectID, '.1.3.6.1.4.1.259.10.1.55.')) { //ECS4150
+            $oid = '.1.3.6.1.4.1.259.10.1.55.1.39.2.1.0';
         } elseif (Str::startsWith($device->sysObjectID, '.1.3.6.1.4.1.259.10.1.42.')) { //ECS4210
             $oid = '.1.3.6.1.4.1.259.10.1.42.101.1.39.2.1.0';
         } elseif (Str::startsWith($device->sysObjectID, '.1.3.6.1.4.1.259.10.1.27.')) { //ECS3510
@@ -136,6 +138,7 @@ class Edgecos extends OS implements MempoolsDiscovery, ProcessorDiscovery
             '.1.3.6.1.4.1.259.10.1.42.' => 'ECS4210-MIB',
             '.1.3.6.1.4.1.259.10.1.27.' => 'ECS3510-MIB',
             '.1.3.6.1.4.1.259.10.1.45.' => 'ECS4120-MIB',
+            '.1.3.6.1.4.1.259.10.1.55.' => 'ECS4150-MIB',
             '.1.3.6.1.4.1.259.8.1.11' => 'ES3510MA-MIB',
             '.1.3.6.1.4.1.259.10.1.43.' => 'ECS2100-MIB',
             '.1.3.6.1.4.1.259.10.1.46.' => 'ECS4100-52T-MIB',
